@@ -19,5 +19,10 @@ namespace teszt
 
 		public string Nev { get => nev; set => nev = value; }
 		public int Ar { get => ar; set => ar = value; }
+
+		public override string ToString()
+		{
+			return $"{this.nev} : {this.ar} Ft";
+		}
 	}
 }
